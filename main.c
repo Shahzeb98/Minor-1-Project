@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <maths.h>
+#include <conio.h>
 
 typedef struct Node  //structure of node
 {
@@ -9,7 +11,7 @@ typedef struct Node  //structure of node
 } node;
 
 void Disk_Read(node *pds){}
-void Disk_Write(node *pds){}
+void Disk_Write(node pds){}
 
 int Binary_Search(node pds, int item, int lb, int ub){
     int mid = (lb + ub)/2;
@@ -35,7 +37,7 @@ int Searching(node pds, int item)
     int loc = Binary_Search(pds, item, lb, ub)
     if((loc <= sizeof(pds)) && (item < pds[loc].value))
     {
-
+        
     }
 }
 void Insertion(node *pds, int item){}
